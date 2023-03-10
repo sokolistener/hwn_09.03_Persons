@@ -14,8 +14,9 @@ public class Main {
                 .setName("Антошка")
                 .build();
         son.happyBirthday();
+        mom.setAddress("Tokyo");
         System.out.println("У " + mom + " есть сын, " + son);
-        System.out.println(mom.hasAge());
+
         System.out.println(son.hasAddress());
         try {
             // Не хватает обязательных полей

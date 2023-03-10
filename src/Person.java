@@ -40,8 +40,8 @@ public class Person {
         return address;
     }
 
-    public boolean hasAge() {
-        return hasAgeFlag;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public boolean hasAddress() {
@@ -49,8 +49,8 @@ public class Person {
     }
 
     public void happyBirthday() {
-        if (hasAge()) {
-            this.age = OptionalInt.of(this.age.getAsInt() + 1);
+        if (age.isPresent()) {
+            age = OptionalInt.of(age.getAsInt() + 1);
         }
     }
 
